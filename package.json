@@ -1,0 +1,11 @@
+{
+  "name": "fast-node",
+  "version": "0.0.0",
+  "description": "Fast node server prototyping",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Skage Spjelkavik <skage.spjelkavik@gmail.com>",
+  "license": "MIT"
+}
