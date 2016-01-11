@@ -12,7 +12,9 @@ function respond(req, res, next) {
 }
 
 function index(req, res, next){
-  var rendered = ReactDOM.renderToString(indexModule);
+  var props = {};
+  var indexComponent = React.createElement(indexModule, props);
+  var rendered = ReactDOM.renderToStaticMarkup(indexComponent);
 
   res.send(rendered);
   next();
