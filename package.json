@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Skage Spjelkavik <skage.spjelkavik@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "restify": "^4.0.3"
+  }
 }
