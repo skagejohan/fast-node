@@ -1,8 +1,20 @@
 var restify = require('restify');
+var React = require('react');
+var ReactDOM = require('react-dom/server');
 var port = process.env.port || 8080;
+
+// Views
+var indexModule = require('./components/index');
 
 function respond(req, res, next) {
   res.send('hello ' + req.params.name);
+  next();
+}
+
+function index(req, res, next){
+  var rendered = ReactDOM.renderToString(indexModule);
+
+  res.send(rendered);
   next();
 }
 
