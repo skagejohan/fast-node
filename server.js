@@ -19,6 +19,7 @@ function index(req, res, next){
 }
 
 var server = restify.createServer();
+server.get('/', index);
 server.get('/hello/:name', respond);
 server.head('/hello/:name', respond);
 
